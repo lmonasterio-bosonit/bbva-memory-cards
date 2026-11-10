@@ -1,0 +1,83 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 8px;
+  margin: 0;
+}
+
+@media (max-width: 420px) {
+  .stats {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+.controls {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 16px;
+  border-radius: var(--radius);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+}
+
+.status {
+  min-height: 84px;
+  display: grid;
+  place-items: center;
+  text-align: center;
+}
+
+.memorize {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.message {
+  font-size: 1.15rem;
+  font-weight: 600;
+}
+
+.hint {
+  color: var(--muted);
+}
+
+.question {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.target {
+  display: inline-grid;
+  place-items: center;
+  min-width: 2.2rem;
+  height: 2.2rem;
+  padding: 0 8px;
+  border-radius: var(--radius-sm);
+  background: var(--primary);
+  color: var(--primary-contrast);
+  font-size: 1.4rem;
+}
+
+.gameOver {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.record {
+  color: var(--warning);
+}
+
+.footerLink {
+  text-align: center;
+  font-size: 0.95rem;
+}
