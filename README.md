@@ -6,7 +6,7 @@ Progressive Web App del juego **Memory Cards**, desarrollada como solución a la
 Memoriza la posición de los números del 1 al 9, espera a que se oculten y encuentra el número que
 se te pide. Cada acierto suma puntos y abre una nueva ronda; un fallo termina la partida.
 
-- **Demo:** `https://<usuario>.github.io/memory-cards/` (se publica automáticamente con el workflow
+- **Demo:** <https://lmonasterio-bosonit.github.io/bbva-memory-cards/> (se publica automáticamente con el workflow
   de GitHub Pages; ver [Despliegue](#despliegue)).
 - **Stack:** React 19 · TypeScript · Vite 8 · React Router · vite-plugin-pwa (Workbox) · Vitest ·
   Testing Library · Playwright · Oxlint · Prettier · GitHub Actions.
@@ -64,8 +64,8 @@ se te pide. Cada acierto suma puntos y abre una nueva ronda; un fallo termina la
 Requisitos: **Node.js 22 o superior** (hay un `.nvmrc` con la versión usada) y npm.
 
 ```bash
-git clone <url-del-repositorio>
-cd memory-cards
+git clone https://github.com/lmonasterio-bosonit/bbva-memory-cards.git
+cd bbva-memory-cards
 npm ci
 npm run dev
 ```
